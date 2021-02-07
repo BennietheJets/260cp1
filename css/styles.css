@@ -1,0 +1,140 @@
+/* Menu */
+.bg-dark {
+  background-color: #7c0000 !important;
+}
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+  text-decoration: underline;
+  background-color: #7c0000 !important;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  background-color: #7c0000 !important;
+}
+
+/*All pages*/
+* {
+  font-family: apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+
+footer {
+  text-align: center;
+}
+
+h1 {
+  padding: 10px;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/*Home page*/
+@media only screen and (min-width: 961px) {
+  .center-image {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .text_image {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .intro_text {
+    width: 25%;
+  }
+}
+
+/*Portfolio Page*/
+/* Image Grid */
+@media only screen and (min-width: 961px) {
+  .portfolio {
+    display: grid;
+    grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .image img {
+    width: 100%;
+  }
+}
+
+/*About Page*/
+@media only screen and (min-width: 961px) {
+  .about_me {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+  }
+}
+
+/*Reviews Page*/
+.reviews {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5px;
+}
+
+.sub_review {
+  border: 2px ridge black;
+  border-radius: 7px;
+  width: 31%;
+  margin: 10px;
+  padding: 5px;
+}
+
+/*Mobile Styles*/
+@media only screen and (max-width: 400px) {
+  .reviews {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+
+  .sub_review {
+    padding: 5px;
+    border: 2px ridge black;
+    border-radius: 7px;
+    margin: 10px;
+    width: 95%;
+  }
+
+  .about_me {
+    width: 100%;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+  }
+
+  .image {
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
