@@ -25,12 +25,20 @@
     Segoe UI Symbol;
 }
 
+body {
+  background-color: lightslategray;
+}
+
 footer {
   text-align: center;
 }
 
 h1 {
   padding: 10px;
+}
+
+p {
+  padding-left: 10px;
 }
 
 img {
@@ -44,6 +52,11 @@ img {
     margin: auto;
     width: 50%;
     padding: 10px;
+  }
+
+  .homepagepic {
+    width: 80%;
+    height: auto;
   }
 
   .text_image {
