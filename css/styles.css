@@ -29,16 +29,12 @@ body {
   background-color: lightslategray;
 }
 
+a {
+  color: #0a218a;
+}
+
 footer {
   text-align: center;
-}
-
-h1 {
-  padding: 10px;
-}
-
-p {
-  padding-left: 10px;
 }
 
 img {
@@ -46,20 +42,36 @@ img {
   border-style: none;
 }
 
+.concert_header {
+  text-align: center;
+}
+
+
 /*Home page*/
 @media only screen and (min-width: 961px) {
   .center-image {
     margin: auto;
     width: 50%;
     padding: 10px;
+    text-align: center;
   }
 
   .homepagepic {
-    width: 80%;
+    width: 85%;
     height: auto;
   }
 
+  .profilepic {
+    width: 25%;
+    padding-top: 10px;
+  }
+
   .text_image {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .text_list {
     display: flex;
     justify-content: space-around;
   }
@@ -69,7 +81,7 @@ img {
   }
 }
 
-/*Portfolio Page*/
+/*Colplay Page*/
 /* Image Grid */
 @media only screen and (min-width: 961px) {
   .portfolio {
@@ -79,12 +91,16 @@ img {
     grid-row-gap: 10px;
   }
 
+  .pagetitle{
+    text-align: center;
+  }
+
   .image img {
     width: 100%;
   }
 }
 
-/*About Page*/
+/*Passion Pit Page*/
 @media only screen and (min-width: 961px) {
   .about_me {
     display: flex;
@@ -93,7 +109,7 @@ img {
   }
 }
 
-/*Reviews Page*/
+/*Vampire Weekend Page*/
 .reviews {
   display: flex;
   flex-flow: row;
@@ -117,6 +133,10 @@ img {
     flex-flow: column;
     flex-wrap: wrap;
     margin: 5px;
+  }
+
+  .pagetitle{
+    text-align: center;
   }
 
   .sub_review {
